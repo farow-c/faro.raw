@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>faro.</title>
+<meta name="description" content="faro — graphite, shadow, and the body as language.">
+<link rel="stylesheet" href="css/style.css?v=7">
+</head>
+<body>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ============ PHASE 1: ENTRY SCREEN ============ -->
+<div id="entry-screen" class="entry-screen">
+  <div class="entry-image-wrap" id="entry-wrap">
+    <img id="entry-img" src="assets/works/see-for-me.jpg" alt="">
+    <div class="entry-half entry-half-left" id="entry-half-left">
+      <div class="entry-half-inner" style="background-image:url('assets/works/see-for-me.jpg');"></div>
+    </div>
+    <div class="entry-half entry-half-right" id="entry-half-right">
+      <div class="entry-half-inner" style="background-image:url('assets/works/see-for-me.jpg');"></div>
+    </div>
+  </div>
+  <div class="enter-label" data-i18n="enter">enter.</div>
+</div>
+
+<!-- ============ PHASE 2: CAVE ============ -->
+<div id="cave-viewport" style="display:none; position:fixed; inset:0; overflow:auto; z-index:1;">
+  <div id="cave-content"></div>
+</div>
+<img id="cave-heart" class="cave-heart-bg" src="assets/heart.png" alt="">
+<canvas id="torch-canvas" style="display:none; position:fixed; inset:0; z-index:2; pointer-events:none;"></canvas>
+
+<div id="cave-hint" class="cave-hint" data-i18n="move_to_explore">— move your torch to explore —</div>
+
+<div id="cave-compass" class="cave-compass" aria-hidden="true">
+  <span class="arrow-up">↑</span>
+  <span class="arrow-down">↓</span>
+  <span class="arrow-left">←</span>
+  <span class="arrow-right">→</span>
+</div>
+
+<nav id="cave-nav" class="cave-nav">
+  <a href="works.html" data-transition>works</a>
+  <span class="sep">/</span>
+  <a href="about.html" data-transition>about</a>
+  <span class="sep">/</span>
+  <a href="contact.html" data-transition>contact</a>
+  <span class="sep">/</span>
+  <a href="commissions.html" data-transition>commissions</a>
+</nav>
+
+<script src="js/i18n.js?v=3"></script>
+<script src="js/cave.js?v=11"></script>
+</body>
+</html>
